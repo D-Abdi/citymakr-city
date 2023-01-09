@@ -4,6 +4,7 @@
     "@babylonjs/inspector": "^5.39.0"
   },
   "dependencies": {
+    "socket.io-client": "^4.5.4",
     "vite": "^4.0.3"
   }
 }
