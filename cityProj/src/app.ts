@@ -28,7 +28,7 @@ class App {
                     new PineTree(event.position.x, event.position.y, scene)
                 break;
                 case "road":
-                    new Road(event.position.x, event.position.y, scene)
+                    new Road(event.position.x, event.position.y)
             }
         })
 
