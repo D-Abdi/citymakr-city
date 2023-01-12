@@ -17,7 +17,7 @@ import Road from "./components/road";
 class App {
     constructor() {
         // create the canvas html element and attach it to the webpage
-        const socket = io("http://localhost:3000");
+        const socket = io("https://citymakrserver.fly.dev/");
 
         socket.on("place-event", (event) => {            
             switch(event.icon) {
@@ -33,8 +33,9 @@ class App {
         })
 
         const canvas = document.createElement("canvas");
-        canvas.style.width = "95%";
-        canvas.style.height = "50%";
+        canvas.style.width = `${window.innerWidth}px`;
+        canvas.style.height = `${window.innerHeight}px`;
+        canvas.style.overflowX = "hidden"
         canvas.id = "gameCanvas";
         document.body.appendChild(canvas);
 
